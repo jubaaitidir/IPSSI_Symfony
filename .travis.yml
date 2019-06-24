@@ -2,7 +2,9 @@ language: 'php'
 php:
  - '7.3'
 before_install: true
-install: true
+install: 
+	echo "salut"
+	echo "user . jubaaitidir "
 before_script: true
 script: true
 after_script: true
