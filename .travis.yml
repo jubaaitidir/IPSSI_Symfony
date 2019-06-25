@@ -1,15 +1,14 @@
-language: 'php'
+language: php
 php:
- - '7.3'
+- '7.3'
 before_install: true
 install:
- - composer install
-
+- composer install
 before_script: true
-script: 
- - phpunit tests
+script:
+- phpunit tests
 after_script: true
 deploy:
   provider: heroku
   api_key:
-    secure: "YOUR ENCRYPTED API KEY"
+    secure: LgOdj7F9hWmUef4OREKoKPCY/RiILTPmK8FLB+at7isDfsB9/S0dtSYwgfK73cp5W+Djisy6hSPn84ONgWnT7k70Fr8C6vvvfUKvyNkO85ZK+HeqlvB2/yUjj5KGLisV71rK2Jglu9wZkxqNvZC66bnUazcbmx3tvmwlKGyg2JROPrVYbpANVRl/IcYYMJcXWITaMPmY4olPQrLPQ+MNn7cNVpLsT8zOKAdKMrRWuQbh2TCiIKAtggsYwlhJv2UWQFDgfx3nZt6vpg4+4EqzgIwp8Jjr1w4RIk9Nw6Pf+MRHFRai9WBNUCMbNPX+8XBRwphIcZ4V1DSphcfWTKlSpPth4lK7DKpvURR7I1TN0/z1EfbrjF/zyy1eDNOz24wn1bxC61+c0ZV3RhZkOYNDdDMwfhUNBd1r01g4pRwWXx0Tp4Xl32iIWxnnYBe8y/s0n/rvjhcGoQkpP/GlQ7BZ+sYVdWlvYXWgyCfJlWW1/3fVjoHnsHmKuq/3/H+C0f8zfZLFw5BlhdagVws6lC+kG74H+RbAXMayYVg/y7kqHBqlq/Ocngduk1id82aZEIxZd1tCcCsaTBCNlWR0fYx1/WJwZOyGkbVX1W6Pu+7pSlg7ksg6ZB5icIYhXPym110Isnjs26p2iMpFfPUgjracN3Z4ZvdUJdBM4MRHU3xhbzw=

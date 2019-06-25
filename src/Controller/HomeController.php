@@ -22,7 +22,7 @@ class HomeController
 
     {
 
-        return new Response('ok');
+        return new Response('deployment ok');
 
     }
 
