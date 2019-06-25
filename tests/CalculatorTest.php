@@ -1,13 +1,7 @@
 <?php
 
-
-
-namespace App\Tests\Service;
-
-
-
+namespace App\tests;
 use App\Service\Calculator;
-
 use PHPUnit\Framework\TestCase;
 
 
@@ -31,3 +25,4 @@ class CalculatorTest extends TestCase
     }
 
 }
+?>
