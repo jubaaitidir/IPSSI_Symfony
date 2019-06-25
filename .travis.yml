@@ -2,10 +2,14 @@ language: 'php'
 php:
  - '7.3'
 before_install: true
-install: 
+install:
  - composer install
 
 before_script: true
 script: 
  - phpunit tests
 after_script: true
+deploy:
+  provider: heroku
+  api_key:
+    secure: "YOUR ENCRYPTED API KEY"
