@@ -2,45 +2,31 @@
 
 
 
-declare(strict_types=1);
+namespace App\Tests\Service;
 
 
 
-namespace App\Service;
+use App\Service\Calculator;
+
+use PHPUnit\Framework\TestCase;
 
 
 
-use InvalidArgumentException;
-
-
-
-class Calculator
+class CalculatorTest extends TestCase
 
 {
 
-    public function add(float $a, float $b): float
+    public function testAdd()
 
     {
 
-        return $a + $b + 2;
+        $calculator = new Calculator();
 
-    }
-
-
-
-    public function divide(float $a, float $b): float
-
-    {
-
-        if ($b === 0) {
-
-            throw new InvalidArgumentException('Dividing by zero is impossible🤯🤯🤯🤯🤯');
-
-        }
+        $result = $calculator->add(1, 2);
 
 
 
-        return $a / $b;
+        $this->assertEquals(3, $result);
 
     }
 
